@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о путешествиях | Главная</title>
+    <!-- Подключаем внешний файл стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта (Заголовок и навигация) -->
+    <header>
+        <h1>Вокруг Света</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная1</a></li>
+                <li><a href="#articles">Статьи</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><button class="theme-btn" id="themeBtn">
+Темная тема</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основное содержимое страницы (только одно на странице) -->
+    <main>
+
+        <!-- Крупный логический раздел: Список статей -->
+        <section id="articles">
+ <h2>Публикации</h2>
+
+ <!-- Поле живого поиска -->
+ <div class="search-container">
+ <input type="text" id="searchInput"
+placeholder="Введите название статьи для поиска...">
+ </div>
+ <!-- В этот пустой контейнер JavaScript будет
+вставлять наши статьи -->
+ <div id="postsContainer"></div>
+</section>
+
+        <!-- Боковая панель (Дополнительный контент, косвенно связанный с основным) -->
+        <aside id="about">
+            <h3>Об авторе</h3>
+            <p>Меня зовут Алекс. Я посетил 30 стран и делюсь здесь своим опытом бюджетных поездок.</p>
+            <h3>Подписка</h3>
+            <p>Следите за мной в Telegram и YouTube.</p>
+        </aside>
+
+    </main>
+
+    <!-- Подвал сайта (Юридическая информация, копирайт) -->
+     <button class="like-btn">❤ Лайк (<span class="likecount">0</span>)</button>
+    <footer>
+        <p>&copy; 2026 Вокруг Света. Все права защищены.</p>
+        <p><a href="#privacy">Политика конфиденциальности</a></p>
+    </footer>
+
+</body>
+</html>
